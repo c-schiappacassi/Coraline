@@ -978,7 +978,7 @@ label{
 
     .lista_mayor{
         position: absolute;
-        width: 100vw;
+        width: 100%;
         top:   15vh;
         margin-left: -100%;
         left: 0;
