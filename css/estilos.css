@@ -886,6 +886,9 @@ label{
     color: var(--color-texto-blanco);
 }
 
+.boton_acento_crit{
+    display: none;
+}
 
 @media (max-width:576px){
 
@@ -995,14 +998,15 @@ label{
     }
     
     .lista_mayor-item{
-        font-size: 2.5rem; 
+        font-size: 2.8rem; 
         position: relative;
         font-weight: bold;
         height: 8vh;
+        width: 100vw;
         display: inline-flex;
         justify-content: start;
         align-items: center;
-        padding-top: 1vh;
+        padding-top: 0.5vh;
     }
 
     #link_header {
@@ -1013,7 +1017,7 @@ label{
         position: absolute;
         display: flex;
         flex-direction: column;
-        width: 40vw;
+        width: fit-content;
         background: transparent;
         z-index: 1;
         margin: 0;
@@ -1023,21 +1027,19 @@ label{
     }
 
     .lista_menor:nth-of-type(1), .lista_menor:nth-of-type(2){
-        top:8vh;
+        top:7vh;
+        margin-bottom: 1.5vh;
     }
 
     .lista_mayor-item:nth-of-type(2),.lista_mayor-item:nth-of-type(3){
-        margin-top: 16vh;
-    }
-
-    .lista_mayor-item:nth-of-type(3){
-        text-decoration: underline dashed var(--color-claro);
+        margin-top: 13vh;
+        margin-bottom: 1.5vh;
     }
 
     .lista_menor-item{
         display: flex;
-        width: 40vw;
-        height: 8vh;
+        width: 100vw;
+        height: 6vh;
         margin: 0;
         padding: 0;
         justify-content: start;
@@ -1046,20 +1048,27 @@ label{
     }
     
     .lista_menor-item a{
-        font-size: 2rem;
+        font-size: 2.3rem;
         margin-left: 3%;
         color : var(--color-texto-header);
         background: transparent;
-        text-decoration: underline dashed var(--color-claro);
     }
 
     .boton_acento{
-        width: 10%;
+        width: 7%;
         padding-right: 3%;
         margin-right: 5%;
         display: inline;
         position: relative;
         left: 7%;
+        pointer-events:none;
+    }
+
+    .boton_acento_crit{
+        width: 7%;
+        padding-right: 3%;
+        display: inline;
+        position: relative;
         pointer-events:none;
     }
     
