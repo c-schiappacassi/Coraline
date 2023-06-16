@@ -37,8 +37,8 @@ toggleButton.addEventListener("click", () => {
 });
    
 boton_ga.addEventListener("click", () => {
-  menor_ga.classList.add("show_sub");
-  mayor_per.classList.add("clase_lista_mayor_item");
+  menor_ga.classList.toggle("show_sub");
+  mayor_per.classList.toggle("clase_lista_mayor_item");
   navWrapper.classList.remove("nav_largo");
   menor_cre.classList.remove("show_sub");
   menor_per.classList.remove("show_sub");
@@ -46,8 +46,8 @@ boton_ga.addEventListener("click", () => {
 });
 
 boton_per.addEventListener("click", () => {
-  menor_per.classList.add("show_sub");
-  mayor_crit.classList.add("clase_lista_mayor_item");
+  menor_per.classList.toggle("show_sub");
+  mayor_crit.classList.toggle("clase_lista_mayor_item");
   navWrapper.classList.remove("nav_largo");
   menor_cre.classList.remove("show_sub");
   menor_ga.classList.remove("show_sub");
@@ -55,8 +55,8 @@ boton_per.addEventListener("click", () => {
 });
 
 boton_cre.addEventListener("click", () => {
-  menor_cre.classList.add("show_sub");
-  navWrapper.classList.add("nav_largo");
+  menor_cre.classList.toggle("show_sub");
+  navWrapper.classList.toggle("nav_largo");
   menor_per.classList.remove("show_sub");
   menor_ga.classList.remove("show_sub");
   mayor_per.classList.remove("clase_lista_mayor_item");

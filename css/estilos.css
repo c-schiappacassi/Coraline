@@ -148,6 +148,10 @@ li a {
     padding-right: 1.5%;
 }
 
+.lista_mayor-1{
+    display:none;
+}
+
 .lista_mayor-item{
     font-size: 3rem; 
     font-weight: bold;
@@ -252,11 +256,11 @@ li a {
 }
 
 
-.lista_mayor-item:hover .lista_menor, .lista_menor-item:hover .boton_acento, .lista_menor-item:hover .loader, #item_critica:hover #loader_mayor{
+.lista_mayor .lista_mayor-item:hover .lista_menor, .lista_menor-item:hover .boton_acento, .lista_menor-item:hover .loader, #item_critica:hover #loader_mayor{
     display: block;
 }
 
-.lista_mayor-item:hover .llave_pies, .lista_mayor-item:hover .llave_cabeza{
+.lista_mayor .lista_mayor-item:hover .llave_pies, .lista_mayor .lista_mayor-item:hover .llave_cabeza{
     display: initial;
 }
 
@@ -1014,8 +1018,10 @@ label{
         text-decoration: none;
     }
     
-
     .lista_mayor{
+        display:none;
+    }
+    .lista_mayor-1{
         position: absolute;
         width: 100%;
         top:   14.95vh;
@@ -1024,21 +1030,22 @@ label{
         margin-bottom: 0;
         left: 0;
         bottom: 0;
+        display: flex;
         height: fit-content;
         flex-direction: column;
         box-shadow: inset 0px 0px 6px 0px var(--color-darker);
         background:  linear-gradient(160deg, var(--color-claro-1) 0%, var(--color-header)  20% 80%,  var(--color-brillo) 100%);
     }
 
-    .lista_mayor.show{
+    .show{
         margin-left: 0;
     }
 
-    .no-link {
+    .lista_mayor-1.no-link {
         pointer-events: none;
     }
     
-    .lista_mayor-item{
+    .lista_mayor-1 .lista_mayor-item{
         font-size: 3rem; 
         position: relative;
         font-weight: bold;
@@ -1051,10 +1058,6 @@ label{
         align-items: center;
         padding-top: 0.5vh;
         padding-left: 15%;
-    }
-    .lista_mayor-item p:hover{
-        pointer-events: none;
-        width: 30vw;
     }
 
     .desplecable_menor{
@@ -1094,7 +1097,7 @@ label{
         color: var(--color-texto-header);
     }
     
-    .lista_menor{
+    .lista_menor-1{
         position: absolute;
         flex-direction: column;
         justify-content: flex-start;
@@ -1114,7 +1117,7 @@ label{
     }
 
     /* hacerlo clase para el toggle */
-    .lista_menor:nth-of-type(1), .lista_menor:nth-of-type(2){ 
+    .lista_menor-1:nth-of-type(1), .lista_menor-1:nth-of-type(2){ 
         top:7vh;
         margin-bottom: 1.5vh;
     }
@@ -1127,7 +1130,7 @@ label{
         margin-top: 11vh;
     } 
 
-    .lista_menor-item{
+    .lista_menor-1 .lista_menor-item{
         display: flex;
         height: 5vh;
         top:0;
@@ -1139,7 +1142,7 @@ label{
         background: transparent;
     }
     
-    .lista_menor-item a{
+     .lista_menor-1 .lista_menor-item a{
         font-size: 2.5rem;
         width: 100%;
         color : var(--color-texto-header);
@@ -1148,7 +1151,7 @@ label{
         display: flex;
     }
 
-    .boton_acento{
+     .lista_menor-1 .lista_menor-item .boton_acento{
         width: 10%;
         display: inline;
         position: relative;
@@ -1156,15 +1159,6 @@ label{
         margin-right: 10%;
     }
 
-    .lista_mayor-item p:hover{
-        pointer-events: none;
-    }
-
-    .loader,.loader::before, #loader_mayor::before,#loader_mayor, 
-    .lista_menor-item:hover .loader, #item_critica:hover #loader_mayor,
-    .lista_mayor-item:hover .llave_pies, .lista_mayor-item:hover .llave_cabeza {
-        display: none;
-    }
 
     #cont_vid{
         max-width: 1300px;
