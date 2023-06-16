@@ -12,85 +12,98 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,100;0,900;1,100;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
-<body>
-    <header>
-        <nav>
-            <a id="logo" href="index.html">
-                <img id="imagen_logo" src="img/asset/titulo.png" alt="Coraline">
-            </a>
-                <ul class="lista_mayor" id="_items" data-id="1">
-                    <li class="lista_mayor-item" id="mayor_gale" data-id="1">
-                        <!-- <img class="llave_acento" src="img/asset/llave.png" alt="Llave"> -->
-                        <img class="llave_pies" src="img/asset/llave.pies.min.png" alt="parte de llave">
-                        <p>Galeria</p> 
-                        <img  class="llave_cabeza" src="img/asset/llave.cabeza.min.png" alt="parte de llave">
-                        <ul class="lista_menor" id="menor_gale">
-                            <li class="lista_menor-item">
-                                <img class="boton_acento" src="img/asset/boton.chico.png" alt="Botón negro">
-                                <a  href="galeria_pelicula.html">Pelicula</a>
-                                <div class="loader"></div>
-                            </li>
-                            <li class="lista_menor-item ultimo">
-                                <img class="boton_acento" src="img/asset/boton.chico.png" alt="Botón negro">
-                                <a  href="galeria_produccion.html">Produccción</a>
-                                <div class="loader"></div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="lista_mayor-item" id="mayor_perso" data-id="2">
-                        <!-- <img class="llave_acento" src="img/asset/llave.png" alt="Llave"> -->
-                        <img class="llave_pies" src="img/asset/llave.pies.min.png" alt="parte de llave">
-                        <p>Personajes</p> 
-                        <img  class="llave_cabeza" src="img/asset/llave.cabeza.min.png" alt="parte de llave">
-                        <ul class="lista_menor" id="menor_perso" data-id="2">
-                            <li class="lista_menor-item">
-                                <img class="boton_acento" src="img/asset/boton.chico.png" alt="Botón negro">
-                                <a href="personajes_reales.html">Los Reales</a>
-                                <div class="loader"></div>
-                            </li>
-                            <li class="lista_menor-item ultimo">
-                                <img class="boton_acento" src="img/asset/boton.chico.png" alt="Botón negro">
-                                <a href="personajes_otros.html">Los Otros</a>
-                                <div class="loader"></div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="lista_mayor-item" id="item_critica">
-                        <!-- <img class="llave_acento" src="img/asset/llave.png" alt="Llave"> -->
-                        <img class="llave_pies" src="img/asset/llave.pies.min.png" alt="parte de llave">
-                        <img class="boton_acento_crit" src="img/asset/boton.chico.png" alt="Botón negro">
-                        <a id="link_header" href="critica.html">Crítica</a>
-                        <img  class="llave_cabeza" src="img/asset/llave.cabeza.min.png" alt="parte de llave">
-                        <div id="loader_mayor"></div>
-                    </li>
-    
-                    <li class="lista_mayor-item" id="mayor_cred" data-id="3">
-                        <!-- <img class="llave_acento" src="img/asset/llave.png" alt="Llave"> -->
-                        <img class="llave_pies" src="img/asset/llave.pies.min.png" alt="parte de llave">
-                        <p>Créditos</p> 
-                        <img  class="llave_cabeza" src="img/asset/llave.cabeza.min.png" alt="parte de llave">
-                        <ul class="lista_menor" id="menor_cred" data-id="3">
-                            <li class="lista_menor-item">
-                                <img class="boton_acento" src="img/asset/boton.chico.png" alt="Botón negro">
-                                <a href="creditos.html">Pelicula</a>
-                                <div class="loader"></div>
-                            </li>
-                            <li class="lista_menor-item">
-                                <img class="boton_acento" src="img/asset/boton.chico.png" alt="Botón negro">
-                                <a href="creditos_laika.html">Laika Studio</a>
-                                <div class="loader"></div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            
-            <div class="nav_toggle" id="_toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav> 
-    </header>
+<header>
+    <nav>
+        <a id="logo" href="index.html">
+            <img id="imagen_logo" src="img/asset/titulo.png" alt="Coraline">
+        </a>
+        <ul class="lista_mayor" id="_items" data-id="1">
+                <li class="lista_mayor-item" id="mayor_gale" data-id="1">
+                    <!-- <img class="llave_acento" src="img/asset/llave.png" alt="Llave"> -->
+                    <img class="llave_pies" src="img/asset/llave.pies.min.png" alt="parte de llave">
+                    <p class="no-link">Galeria</p>
+                    <img  class="llave_cabeza" src="img/asset/llave.cabeza.min.png" alt="parte de llave">
+                    <div class="desplecable_menor" id="desple_gale">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="lista_menor" id="menor_gale">
+                        <li class="lista_menor-item">
+                            <img class="boton_acento" src="img/asset/boton.chico.png" alt="Botón negro">
+                            <a  href="galeria_pelicula.html">Pelicula</a>
+                            <div class="loader"></div>
+                        </li>
+                        <li class="lista_menor-item ultimo">
+                            <img class="boton_acento" src="img/asset/boton.chico.png" alt="Botón negro">
+                            <a  href="galeria_produccion.html">Produccción</a>
+                            <div class="loader"></div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="lista_mayor-item" id="mayor_perso" data-id="2">
+                    <!-- <img class="llave_acento" src="img/asset/llave.png" alt="Llave"> -->
+                    <img class="llave_pies" src="img/asset/llave.pies.min.png" alt="parte de llave">
+                    <p class="no-link">Personajes</p>
+                    <img  class="llave_cabeza" src="img/asset/llave.cabeza.min.png" alt="parte de llave">
+                    <div class="desplecable_menor" id="desple_perso">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="lista_menor" id="menor_perso" data-id="2">
+                        <li class="lista_menor-item">
+                            <img class="boton_acento" src="img/asset/boton.chico.png" alt="Botón negro">
+                            <a href="personajes_reales.html">Los Reales</a>
+                            <div class="loader"></div>
+                        </li>
+                        <li class="lista_menor-item ultimo">
+                            <img class="boton_acento" src="img/asset/boton.chico.png" alt="Botón negro">
+                            <a href="personajes_otros.html">Los Otros</a>
+                            <div class="loader"></div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="lista_mayor-item" id="item_critica">
+                    <!-- <img class="llave_acento" src="img/asset/llave.png" alt="Llave"> -->
+                    <img class="llave_pies" src="img/asset/llave.pies.min.png" alt="parte de llave">
+                    <a id="link_header" href="critica.html">Crítica</a>
+                    <img  class="llave_cabeza" src="img/asset/llave.cabeza.min.png" alt="parte de llave">
+                    <div id="loader_mayor"></div>
+                </li>
+
+                <li class="lista_mayor-item" id="mayor_cred" data-id="3">
+                    <!-- <img class="llave_acento" src="img/asset/llave.png" alt="Llave"> -->
+                    <img class="llave_pies" src="img/asset/llave.pies.min.png" alt="parte de llave">
+                    <p class="no-link">Créditos</p> 
+                    <img  class="llave_cabeza" src="img/asset/llave.cabeza.min.png" alt="parte de llave">
+                    <div class="desplecable_menor" id="desple_cred">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="lista_menor" id="menor_cred" data-id="3">
+                        <li class="lista_menor-item">
+                            <img class="boton_acento" src="img/asset/boton.chico.png" alt="Botón negro">
+                            <a href="creditos.html">Pelicula</a>
+                            <div class="loader"></div>
+                        </li>
+                        <li class="lista_menor-item">
+                            <img class="boton_acento" src="img/asset/boton.chico.png" alt="Botón negro">
+                            <a href="creditos_laika.html">Laika Studio</a>
+                            <div class="loader"></div>
+                        </li>
+                    </ul>
+                </li>
+        </ul>
+        
+        <div class="nav_toggle" id="_toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav> 
+</header>
     <main> 
         <div id="creditos_div">
             <div class="espacio_cred"></div>
@@ -2580,6 +2593,14 @@
         </div>
     </main>
     <footer>
+        <div id="cont_social">
+            <a class="link_social" target="_blank" href="https://www.youtube.com/"> <img class="img_social" src="img/asset/icons8-youtube-50 (1).png" alt=""></a>
+            <a class="link_social" target="_blank" href="https://www.instagram.com/"> <img class="img_social" src="img/asset/icons8-insta-50 (1).png" alt=""></a>
+            <a class="link_social" target="_blank" href="https://twitter.com/?lang=es"> <img class="img_social" src="img/asset/icons8-twitter-50.png" alt=""></a>
+        </div>
+        <div id="copy_footer">
+            <small>Derechos reservados &copy;Schiappacassi Clara 2023</small>
+        </div>
     </footer>
     <script src="javascript/script_nav.js"></script>
 </body>
