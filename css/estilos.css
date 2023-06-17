@@ -52,6 +52,7 @@ header{
 }
 
 main{
+    padding-bottom: 5vh;
     padding-top: 135.59px; 
     background: linear-gradient(-45deg, var(--color-claro-1) 0%, var(--color-header) 30% 70%, var(--color-brillo) 100%);
    /* background: linear-gradient(var(--color-header),var(--color-darker)) ;*/
@@ -61,9 +62,13 @@ main{
     min-height: 100vh;
     width: 100vw;
     max-width: 1300px;
-    padding-bottom: 10vh;
     z-index: 0;
 }
+
+#main_index{
+    padding-bottom: 0vh;
+}
+
 footer{
     width: 100%;
     height: 10vh;
@@ -77,6 +82,7 @@ footer{
     background-color: var(--color-darker);
     border-color: var(--color-darker);
 }
+
 #cont_social{
     width: 15%;
     height: 20%;
@@ -944,9 +950,14 @@ label{
 
     main{
         padding-top: 15vh;
-        padding-bottom: 5vh;
         z-index: 1;
+        background: linear-gradient(-45deg, var(--color-claro-1) 0%, var(--color-header) 30% 70%, var(--color-brillo) 100%);
+        padding-bottom: 3vh;
     }
+    #main_index{
+        padding-bottom: 0vh;
+    }
+    
 
     header{
         width: 100vw;
@@ -1606,7 +1617,7 @@ label{
    #creditos_div::-webkit-scrollbar-thumb {
         display: none;
    }
-    
+
 }
 
 
