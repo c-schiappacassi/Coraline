@@ -491,10 +491,13 @@ li a {
     transform-style: preserve-3d;
 }
   
-.flip-card:hover .flip-card-inner {
+#perso_desktop .flip-card:hover .flip-card-inner , #cartas_desktop .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
   
+#perso_movil, #cartas_movil{
+    display: none;
+}
 
 .flip-card-front, .flip-card-back {
     position: absolute;
@@ -1308,6 +1311,10 @@ label{
         height: 300px;
         perspective: 1000px; 
     }
+
+    .rotar{
+        transform: rotateY(180deg);
+    }
     
     .gallery_text{
         color: var(--color-texto-blanco);
@@ -1359,8 +1366,14 @@ label{
         transform: rotateY(180deg);
     }
 
-    .flip-card:hover .flip-card-inner {
-        pointer-events: none;
+    #perso_desktop, #cartas_desktop{
+        display: none;
+    }
+    #perso_movil{
+        display: grid;
+    }
+    #cartas_movil{
+        display: flex;
     }
     
     .titulo_critica{
