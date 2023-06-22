@@ -837,6 +837,7 @@ label{
 	height: 75vh;
 	scroll-snap-type: both mandatory;
 	scroll-padding: 1rem;
+    scroll-snap-align: center;  
 }
 
 .otro{
