@@ -69,6 +69,7 @@ main{
     padding-bottom: 0vh;
 }
 
+
 footer{
     width: 100%;
     height: 10vh;
@@ -186,7 +187,6 @@ li a {
     display: inline;
     display: none;
     pointer-events:none;
-
 }
 
 .boton_acento{
@@ -335,6 +335,25 @@ li a {
     height: 40vh;
     max-width: 60vw;
 }
+
+#introduccion{
+    text-align: left;
+    padding: 5%;
+    line-height: 2.1rem;
+}
+
+#textoEnfasis{
+    margin-top: 3%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+#textoIndex{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
 
 .slider{
     text-align: center;
@@ -660,21 +679,30 @@ tr .tg-eelb{font-weight: 900;}
     box-shadow: 10px 10px 0px var(--color-darkest-1);
 }
 
+
+#centrar_laika_texto{
+    text-align: start;
+}
+
 #sobre_laika h1{
     font-size: 3rem;
     margin-bottom: 2vh;
 }
 
-#sobre_laika p{
+#sobre_laika{
     font-size: 1.5rem;
     font-weight: 300;
 
 }
 
-#sobre_laika p i{
+#sobre_laika i{
     font-size: 1.5rem;
     font-weight: bold;
+}
 
+#sobre_laika #span_izquierda{
+    text-align: start;
+    font-size: 1.3rem;
 }
 
 .comillas{
@@ -849,7 +877,6 @@ label{
 }
 
 .gallery_item{
-	scroll-snap-align: center;  
 	display:flex;
     flex-direction: column;
     align-items: center;
@@ -894,18 +921,27 @@ label{
 .gallery_text{
     color: var(--color-texto-blanco);
     width: 100%;
+    text-align: start;
     padding: 2% 2.8%;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+}
+
+#espacio_entre_galerias{
+    width: 90%;
+    height: 2px;
+    background-color: var(--color-darkest-1);
+    display: block;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .reales .gallery_text{
     color: var(--color-texto-header);
-    width: 100%;
-    font-weight: 900;
-    padding: 2% 2.8%;
 }
 
 .gallery_text p{
-    font-weight: 300;
+    font-weight: bold;
     font-size: 1.2rem;
 }
 
@@ -929,7 +965,6 @@ label{
 #introduccion{
     position: relative;
     display: block;
-    padding: 2.2rem;
     width: 100%;
     margin: auto;
     background: linear-gradient(14deg, rgba(2,0,36, 0.8) 0%, rgba(24, 24, 65, 0.7) 66%, 
@@ -941,7 +976,6 @@ label{
     overflow: hidden;
     z-index: +1;
     font-family: 'Amatic SC', cursive;
-    font-size: 2.8rem;
     color: var(--color-texto-blanco);
 }
 
@@ -1321,7 +1355,11 @@ label{
         color: var(--color-texto-blanco);
         width: 100%;
         padding: 2% 2.8%;
+        text-align: start;
+        margin-bottom: 2.5%;
+        margin-top: 2.5%;
     }
+
     
     .reales .gallery_text{
         color: var(--color-texto-header);
@@ -1331,8 +1369,8 @@ label{
     }
     
     .gallery_text p{
-        font-weight: 300;
-        font-size: 1.2rem;
+        font-weight: bold;
+        font-size: 1.1rem;
     }
     
     .nombre{
@@ -1358,8 +1396,8 @@ label{
 
     .flip-card {
         background-color: transparent;
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         perspective: 1000px; 
         font-family: sans-serif;
     }
@@ -1568,8 +1606,8 @@ label{
     #sobre_laika p{
         font-size: 1.3rem;
         font-weight: 300;
-    
     }
+
     
     #sobre_laika p i{
         font-size: 1.5rem;
@@ -1631,6 +1669,9 @@ label{
    #creditos_div::-webkit-scrollbar-thumb {
         display: none;
    }
+   .input , label, select {
+    width: 95%;
+    }
 
 }
 
